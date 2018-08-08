@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      var bgImageArray = ["bg2.png", "bg1.jpeg", "bg3.jpg"],
+      base = "images/",
+      secs = 4;
+      bgImageArray.forEach(function(img){
+      new Image().src = base + img;
+      });
+      
+      function backgroundSequence() {
+      window.clearTimeout();
+      var k = 0;
+      for (i = 0; i < bgImageArray.length; i++) {
+      setTimeout(function(){ 
+      document.getElementById('animated-bg').style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center";
+      document.getElementById('animated-bg').style.backgroundSize ="cover";
+      if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }	
+      }, (secs * 1000) * i)	
+      }
+      }
+      backgroundSequence();
+    </script>
+
+    <title>Sample</title>
+</head>
+<body id="animated-bg">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#"><img src="images/logo.svg" height="60" class="d-none d-sm-block"alt="">
+    <img src="images/logo_small.jpg" height="60" class="d-block d-sm-none"alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">COMPANY <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">IT SOLUTIONS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">INDUSTRY SOLUTIONS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">SERVICES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">MAINTENANCE</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- JUMBOTRON -->
+  <div class="jumbotron text-white rounded-0 clearfix">
+    <div class="container">
+      <h1>HELLO WORLD</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> 
+          laboris nisi ut aliquip ex ea commodo consequat.<br>
+      </p>
+      <a class="btn btn-lg">LEARN MORE</a>
+    </div>
+  </div>
+  <!-- END JUMBOTRON -->
+
+  <!-- SECTION 1 -->
+  <div class="container1 container-fluid">
+    <center>
+      <b>WELCOME</b><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        laboris nisi ut aliquip ex ea commodo consequat.<br>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      </p>
+    <br>
+    <div class="row fade">
+      <div class="txt col-lg-4 col-sm-12">
+        <img class="images"src="images/img1.svg"><br>
+        <b>PROTECT</b><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
+      
+      <div class="txt col-lg-4 col-sm-12">
+        <img class="images"src="images/img2.svg"><br>
+        <b>25 YEARS</b><br>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
+      
+      <div class="txt col-lg-4 col-sm-12">
+        <img class="images"src="images/img3.svg"><br>
+        <b>UNDER THE MICROSCOPE</b><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
+    
+    </div>
+    </center>
+  </div>
+  
+  <!-- SECTION 2 -->
+  <div class="container2 container-fluid clearfix">
+    <center>
+      <b>OUR SERVICES</b>
+      <p>
+          Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam nonumy eirmod temporal<br>
+           invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+           At vero eos et accusam et justo duo dolores et ea rebum.
+      </p>
+      <div class="row fade">
+      <div class="section col-lg-3 col-sm-12">
+        <div class="container">
+          <div class="image">
+            <img src="images/bg1.jpeg">
+            <p>
+              <b>IT SOLUTIONS</b><br>
+              SAFETY, FLEXIBILITY, ECONOMY
+            </p>
+          </div>
+          <p>
+              Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam nonumy eirmod temporal
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+          <a class="btn btn-block">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="section col-lg-3 col-sm-12">
+        <div class="container">
+          <div class="image">
+            <img src="images/bg2.png">
+            <p>
+              <b>INDUSTRY SOLUTIONS</b><br>
+              YOUR EXPERT TEAM
+            </p>
+          </div>
+          <p>
+              Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam nonumy eirmod temporal
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+          <a class="btn btn-block">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="section col-lg-3 col-sm-12">
+        <div class="container">
+          <div class="image">
+            <img src="images/bg3.jpg">
+            <p>
+              <b>SR-SERVICES</b><br>
+              GOOD IS NOT GOOD ENOUGH
+            </p>
+          </div>
+          <p>
+              Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam nonumy eirmod temporal
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+          <a class="btn btn-block">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="section col-lg-3 col-sm-12">
+        <div class="container">
+          <div class="image">
+            <img src="images/bg1.jpeg">
+            <p>
+              <b>REMOTE MAINTENANCE</b><br>
+              WE ARE HERE FOR YOU
+            </p>
+          </div>
+          <p>
+              Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam nonumy eirmod temporal
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+              At vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+          <a class="btn btn-block">LEARN MORE</a>
+        </div>
+      </div>
+      </div>
+    </center>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="container3 container-fluid clearfix">
+    <center>
+      <b>CURRENT</b>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam nonumy eirmod temporal<br>
+         invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+         At vero eos et accusam et justo duo dolores et ea rebum.
+    </p>
+    <a class="btn btn-lg rounded-0">LEARN MORE</a><br><br>
+    <div class="row">
+      <div class="section col-lg-6 col-sm-12">
+            <div class="date col-lg-2">
+              <p>24 October<br>2017</p>
+            </div>
+            <div class="text col-lg-10">
+              <p>LOREM IPSUM DOLOR SIT AMET, CONSETETUR, SADIPSING ELITR</p>
+            </div>
+            <img src="images/bg2.png">
+      </div>
+          
+      <div class="section col-lg-6 col-sm-12">
+          <div class="date col-lg-2">
+              <p>24 October<br>2017</p>
+            </div>
+            <div class="text col-lg-10">
+              <p>LOREM IPSUM DOLOR SIT AMET, CONSETETUR, SADIPSING ELITR</p>
+            </div>
+            <img src="images/bg3.jpg">
+      </div>
+      
+    </div>
+    </center>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="container4 container-fluid clearfix">
+    <div class="row mx-auto my-auto fade">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8 mx-auto my-auto">
+        <img src="images/microsoft.png">
+        <img src="images/apple.png">
+        <img src="images/vmware.png">
+        <img src="images/hp.png">
+        <img src="images/lancom.png">
+        <img src="images/sophos.png">
+        <img src="images/micors.png">
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="container5 container-fluid clearfix">
+    <div class="row fade">
+      <div class="section col-lg-6">
+        <div class="image col-lg-2">
+          <img src="images/user.png">
+        </div>
+        <div class="text col-lg-10">
+          <p><i>Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam nonumy eirmod temporal</i><br>
+          <b>- Jane Doe</b></p>
+        </div>
+      </div>
+
+      <div class="section col-lg-6">
+        <div class="image col-lg-2">
+          <img src="images/user.png">
+        </div>
+        <div class="text col-lg-10">
+          <p><i>Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam nonumy eirmod temporal</i><br>
+          <b>- John Doe</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="container6 container-fluid clearfix">
+    <center>
+      <b>CONTACT US</b>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipsing elitr, sed diam nonumy eirmod temporal<br>
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et justo duo dolores et ea rebum.
+      </p>
+      <div class="row fade">
+        <div class="section col-lg-3">
+          <p>Telephone<br>(02)930-1234</p>
+        </div>
+        <div class="section col-lg-3">
+          <p>Telefax<br>(02)930-1234</p>
+        </div>
+        <div class="section col-lg-3">
+          <p>Email<br>info@email.com</p>
+        </div>
+        <div class="section col-lg-3">
+          <p>Address<br>13 Brick Rd., Makati City</p>
+        </div>
+      </div>
+    </center> 
+  </div>
+
+  <!--SECTION 7 -->
+  <div class="container7 container-fluid clearfix">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="images/logo_sml.svg">
+      </div>
+      <div class="section col-lg-2">
+        <b>COMPANIES</b><br>
+        About Us<br>
+        Career<br>
+        Social/Sponsoring
+      </div>
+      <div class="section col-lg-2">
+        <b>IT SOLUTIONS</b><br>
+        Client Management<br>
+        Server &amp; Storage<br>
+        Networking Solutions<br>
+        Virtualization<br>
+        Security
+      </div>
+      <div class="section col-lg-2">
+        <b>INDUSTRY SOLUTIONS</b><br>
+        Adult Education Centers<br>
+        Hotel &amp; Gastro<br>
+        Datev
+      </div>
+      <div class="section col-lg-2">
+        <b>SR SERVICES</b><br>
+        SR FOCUS<br>
+        SR SPAM<br>
+        SR ANALYSIS
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer container-fluid clearfix">
+    <center>
+      <div class="row mx-auto my-auto">
+        <div class="col-lg-2">
+          <a class="nav-link" href="#">CAREER</a>
+        </div>
+        <div class="col-lg-2">
+          <a class="nav-link" href="#">IMPRINT</a>
+        </div>
+        <div class="col-lg-2">
+          <a class="nav-link" href="#">DATA PROTECTION</a>
+        </div>
+        <div class="col-lg-2">
+          <a class="nav-link" href="#">BLACK &amp; ROHLOFF CUP</a>
+        </div>
+        <div class="col-lg-4">
+          <p class="nav-link">Copyright 2017</p>
+        </div>
+      </div>
+    </center>
+  </footer>
+
+  <script>
+    $(window).on("load",function() {
+      $(window).scroll(function() {
+        var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+        $(".fade").each(function() {
+          /* Check the location of each desired element */
+          var objectBottom = $(this).offset().top + $(this).outerHeight();
+          
+          if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+            if ($(this).css("opacity")==0) {
+              $(this).fadeTo(500,1);
+            }
+          }
+      });
+    }).scroll(); //invoke scroll-handler on page-load
+  });
+</script>
+</body>
+</html>

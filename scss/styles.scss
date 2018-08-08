@@ -1,0 +1,230 @@
+//VARIABLES
+$colorPrimary: #5f0202;
+$colorSecondary: #f1f1f1;
+$colorText: #6b6b6b;
+
+#animated-bg{
+    background: url("..images/bg2.png") no-repeat center center;
+    background-size: cover;
+    transition: background 3s;
+    position:relative;
+}
+#animated-bg:before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.navbar {
+    background: transparent;
+    width: 100%;
+}
+.fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }  
+
+
+.nav-item .nav-link{
+    color: $colorText !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+.nav-item .nav-link:hover{
+    color: $colorPrimary !important;
+}
+.jumbotron {
+    padding-top: 15%;
+    background: transparent;
+    height: 500px;
+    margin-bottom: 0%;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+h1{
+    color: #FFFFFF;
+}
+.btn{
+    background: $colorPrimary;
+}
+a:hover{
+    color: $colorText !important;
+}
+.fade {
+    opacity: 1;
+  }
+.container1{
+    background: white;
+    color: $colorText !important;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:3%;
+
+    b{
+        font-size:30px;
+    }
+
+    img{
+        height: 50px;
+        width: 50px;
+        margin-bottom: 5px;
+    }
+
+    .row{
+        b{
+            font-size: 16px;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+}
+.container2{
+    padding: 3%;
+    background: $colorSecondary;
+    b{
+        font-size: 30px;
+    }
+    .section{
+        padding: 1%;
+        background:white;
+        
+        img{
+            position: relative; 
+            height: 200px;
+            width: 230px;
+        }
+        p{
+            text-align: justify;
+        }
+        a{
+            color:white;
+        }
+
+        .container{
+            .image{
+                position: relative;
+                p{
+                    b{
+                        font-size:15px;
+                    }
+                    font-size:15px;
+                    color: white;
+                    position: absolute; 
+                    top: 150px; 
+                    left: 30px; 
+                    width: 100%;
+                }
+            }
+            
+        } 
+    }
+}
+.container3{
+    background:white;
+    padding: 1%;
+    b{
+        font-size: 30px;
+    }
+    a{
+        width:340px;
+        height: 40px;
+        color: white !important;
+        font-size:16px;
+        font-weight: bold;
+    }
+    a:hover{
+        color: $colorText !important;
+    }
+    .section{
+        float: left;
+        clear:none;
+        .date{
+            background-color: #5f0202;
+            color: white !important;
+            float: left;
+            margin-left: 20%;
+            padding:0;
+        }
+        .text{
+            padding: 0;
+            color: $colorText !important;
+            text-align: left;
+            font-weight: bold;
+        }
+    }
+    img{
+        height: 300px;
+        width: 400px;
+        margin-top: 1%;
+    }
+}
+.container4{
+    padding: 3%;
+    background: $colorSecondary;
+    .row{
+        background: white;
+        padding: 1%;
+        height: 100px;
+        width: 1200px;
+    }
+    img{
+        margin: 4px;
+    }
+}
+.container5{
+    background: white;
+    padding: 5%;
+    .section{
+        float: left;
+        clear:none;
+        display: flex;
+        align-items: center;
+        img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            float: left;
+        }
+    }
+}
+.container6{
+    color: white !important;
+    padding: 2%;
+    b{
+        font-size:30px;
+    }
+    .section{
+        font-size: 25px;
+    }
+}
+.container7{
+    background: white;
+    padding: 1%;
+    img{
+        width: 90px;
+        height: 90px;
+    }
+    .section{
+        font-size:12px;
+    }
+}
+.footer{
+    padding: 1%;
+    background: $colorSecondary;
+    font-size: 12px;
+    .row{
+        .col-lg-2{
+            margin:0; 
+            padding: 0;
+            vertical-align: middle;
+            .nav-link{
+                color: $colorPrimary !important;
+            }
+        }
+    }
+}

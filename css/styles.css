@@ -1,0 +1,258 @@
+#animated-bg {
+  background: url("..images/bg2.png") no-repeat center center;
+  background-size: cover;
+  transition: background 3s;
+  position: relative;
+}
+
+#animated-bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar {
+  background: transparent;
+  width: 100%;
+}
+
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+.nav-item .nav-link {
+  color: #6b6b6b !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-item .nav-link:hover {
+  color: #5f0202 !important;
+}
+
+.jumbotron {
+  padding-top: 15%;
+  background: transparent;
+  height: 500px;
+  margin-bottom: 0%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+.btn {
+  background: #5f0202;
+}
+
+a:hover {
+  color: #6b6b6b !important;
+}
+
+.fade {
+  opacity: 1;
+}
+
+.container1 {
+  background: white;
+  color: #6b6b6b !important;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3%;
+}
+
+.container1 b {
+  font-size: 30px;
+}
+
+.container1 img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 5px;
+}
+
+.container1 .row b {
+  font-size: 16px;
+}
+
+.container1 .row p {
+  text-align: justify;
+}
+
+.container2 {
+  padding: 3%;
+  background: #f1f1f1;
+}
+
+.container2 b {
+  font-size: 30px;
+}
+
+.container2 .section {
+  padding: 1%;
+  background: white;
+}
+
+.container2 .section img {
+  position: relative;
+  height: 200px;
+  width: 230px;
+}
+
+.container2 .section p {
+  text-align: justify;
+}
+
+.container2 .section a {
+  color: white;
+}
+
+.container2 .section .container .image {
+  position: relative;
+}
+
+.container2 .section .container .image p {
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  width: 100%;
+}
+
+.container2 .section .container .image p b {
+  font-size: 15px;
+}
+
+.container3 {
+  background: white;
+  padding: 1%;
+}
+
+.container3 b {
+  font-size: 30px;
+}
+
+.container3 a {
+  width: 340px;
+  height: 40px;
+  color: white !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container3 a:hover {
+  color: #6b6b6b !important;
+}
+
+.container3 .section {
+  float: left;
+  clear: none;
+}
+
+.container3 .section .date {
+  background-color: #5f0202;
+  color: white !important;
+  float: left;
+  margin-left: 20%;
+  padding: 0;
+}
+
+.container3 .section .text {
+  padding: 0;
+  color: #6b6b6b !important;
+  text-align: left;
+  font-weight: bold;
+}
+
+.container3 img {
+  height: 300px;
+  width: 400px;
+  margin-top: 1%;
+}
+
+.container4 {
+  padding: 3%;
+  background: #f1f1f1;
+}
+
+.container4 .row {
+  background: white;
+  padding: 1%;
+  height: 100px;
+  width: 1200px;
+}
+
+.container4 img {
+  margin: 4px;
+}
+
+.container5 {
+  background: white;
+  padding: 5%;
+}
+
+.container5 .section {
+  float: left;
+  clear: none;
+  display: flex;
+  align-items: center;
+}
+
+.container5 .section img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+}
+
+.container6 {
+  color: white !important;
+  padding: 2%;
+}
+
+.container6 b {
+  font-size: 30px;
+}
+
+.container6 .section {
+  font-size: 25px;
+}
+
+.container7 {
+  background: white;
+  padding: 1%;
+}
+
+.container7 img {
+  width: 90px;
+  height: 90px;
+}
+
+.container7 .section {
+  font-size: 12px;
+}
+
+.footer {
+  padding: 1%;
+  background: #f1f1f1;
+  font-size: 12px;
+}
+
+.footer .row .col-lg-2 {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.footer .row .col-lg-2 .nav-link {
+  color: #5f0202 !important;
+}
